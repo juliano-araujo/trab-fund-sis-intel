@@ -1,10 +1,10 @@
 cities = {
     0: 'Aracaju',
     1: 'Belém',
-    2: 'BH',
+    2: 'Belo Horizonte',
     3: 'Boa Vista',
     4: 'Brasília',
-    5: 'C. Grande',
+    5: 'Campo Grande',
     6: 'Cuiabá',
     7: 'Curitiba',
     8: 'Florianópolis',
