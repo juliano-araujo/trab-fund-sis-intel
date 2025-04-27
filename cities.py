@@ -1,4 +1,4 @@
-cities = {
+cities_dict = {
     0: 'Aracaju',
     1: 'Belém',
     2: 'Belo Horizonte',

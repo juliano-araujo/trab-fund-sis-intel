@@ -25,7 +25,7 @@ def bfs(graph: nx.Graph, start: int, goal: int):
             if neighbor not in visited:
                 new_path = path + [neighbor]
                 visited.add(neighbor)
-                print(f"visitou {neighbor} -> path {new_path}")
+                # print(f"visitou {neighbor} -> path {new_path}")
 
                 if neighbor == goal:
                   return new_path, len(visited)
@@ -44,7 +44,7 @@ def dfs(graph: nx.Graph, start: int, goal: int):
           continue
         
         visited.add(node)
-        print(f"visitou {node} -> path {path}")
+        # print(f"visitou {node} -> path {path}")
         
         if node == goal:
           return path, len(visited)
@@ -69,7 +69,7 @@ def ucs(graph: nx.Graph, param_name: str, start: int, goal: int):
             continue
 
         visited.add(node)                
-        print(f"visitou {node} -> path: {path} cost: {cost}")
+        # print(f"visitou {node} -> path: {path} cost: {cost}")
 
         for neighbor in graph.neighbors(node):
             if neighbor not in visited:
@@ -93,7 +93,7 @@ def greedy(graph: nx.Graph, heuristic_function: Callable[[int, int], int] ,start
             continue
 
         visited.add(node)                
-        print(f"visitou {node} -> path: {path} heuristic: {heuristic}")
+        # print(f"visitou {node} -> path: {path} heuristic: {heuristic}")
 
         for neighbor in graph.neighbors(node):
             if neighbor not in visited:
@@ -117,7 +117,7 @@ def a_star(graph: nx.Graph,  param_name: str, heuristic_function: Callable[[int,
             continue
 
         visited.add(node)                
-        print(f"visitou {node} -> path: {path} heuristic: {heuristic}")
+        # print(f"visitou {node} -> path: {path} heuristic: {heuristic}")
 
         for neighbor in graph.neighbors(node):
             if neighbor not in visited:
